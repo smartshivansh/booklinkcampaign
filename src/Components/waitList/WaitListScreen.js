@@ -39,7 +39,7 @@ export default function WaitListScreen(){
             return;
         }
 
-        try {fetch("http://localhost:8080/waitlist", {
+        try {fetch("http://myty.in/waitlist", {
             method: "POST",
             body: JSON.stringify({mobile}),
             headers: {
