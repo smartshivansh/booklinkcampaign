@@ -1,0 +1,292 @@
+@keyframes loading{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(360deg);
+    }
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.subContainer{
+    width: max-content;
+    height: 30rem;
+    padding: 1rem;
+    border: 3px solid #FFC700;
+    display: flex;
+    padding: 5rem;
+    position: relative;
+}
+
+.error{
+    color: red;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.image{
+    width: 30rem;
+    height: 20rem;
+}
+
+.xicon{
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+.xicon:hover{
+    cursor: pointer;
+}
+
+.formContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 17rem;
+    margin-right: 2rem;
+    min-width: max-content;
+}
+
+.heading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.subHeading{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+
+.content{
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+
+.form{
+    display: flex;
+    width: 100%;
+    min-width: max-content;
+}
+
+.input{
+    width: 18rem;
+    height: 2.5rem;
+    border: 1px solid #BBBBBB;
+    border-radius: 2px;
+    border-right: none;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    padding: 0 1rem;
+}
+
+.input:focus{
+    outline: none;
+}
+
+.submit{
+    width: 5rem;
+    height: 2.5rem;
+    background-color: #FFC700;
+    border-radius: 0px 2px 2px 0px;
+    border: none;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.submit:hover{
+    cursor: pointer;
+}
+
+.loader{
+    height: 1.5rem;
+    width: 1.5rem;
+    animation: loading 0.5s linear  infinite;
+}
+
+@media (max-width: 1200px){
+
+    .subContainer{
+        height: 28rem;
+        padding: 3rem;
+    }
+
+    .image{
+        width: 28rem;
+        height: 20rem;
+    }
+
+    .formContainer{
+        width: 23rem;
+        height: 15rem;
+    }
+}
+
+@media (max-width: 970px){
+
+    .subContainer{
+        height: 20rem;
+        padding: 3rem;
+    }
+
+    .image{
+        width: 21rem;
+        height: 15rem;
+    }
+
+    .formContainer{
+        width: 20rem;
+        height: 15rem;
+    }
+
+    .input{
+        width: 14rem;
+        height: 2rem;
+    }
+
+    .submit{
+        height: 2rem;
+        width: 3rem;
+        font-size: 0.8rem;
+    }
+
+    .xicon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .heading{
+        font-size: 1.8rem;
+    }
+}
+
+
+@media (max-width: 800px){
+
+    .subContainer{
+        height: 16rem;
+        padding: 3rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: max-content;
+    }
+
+    .image{
+        width: 16rem;
+        height: 12rem;
+    }
+
+    .formContainer{
+        width: 20rem;
+        height: 12rem;
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+
+    .form{
+        margin-top: 1.5rem;
+    }
+
+    .input{
+        width: 14rem;
+        height: 2rem;
+    }
+
+    .submit{
+        height: 2rem;
+        width: 3rem;
+        font-size: 0.8rem;
+    }
+
+    .xicon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    .heading{
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 430px){
+
+    .subContainer{
+        height: 12rem;
+        padding: 2rem;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: max-content;
+    }
+
+    .image{
+        width: 13rem;
+        height: 9rem;
+    }
+
+    .formContainer{
+        width: 16rem;
+        height: 13rem;
+        margin-right: 0;
+        margin-top: 2rem;
+    }
+
+    .form{
+        margin-top: 1rem;
+    }
+
+    .input{
+        width: 14rem;
+        height: 2rem;
+    }
+
+    .submit{
+        height: 2rem;
+        width: 3rem;
+        font-size: 0.8rem;
+    }
+
+    .xicon{
+        width: 1.5rem;
+        height: 1.5rem;
+    }
+
+    
+
+    .heading{
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+}
